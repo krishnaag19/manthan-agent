@@ -211,7 +211,7 @@ def send_report(
 
     attachments = attachment_paths or []
     html_body   = body_html or _default_body(summary)
-    from_addr   = sender or SMTP_USER or "mantha-pipeline@gmail.com"
+    from_addr   = sender or SMTP_USER or "money.cassata@gmail.com"
 
     log.info("Sending report to %s  |  subject: '%s'  |  attachments: %s",
              to, subject, [Path(p).name for p in attachments])
