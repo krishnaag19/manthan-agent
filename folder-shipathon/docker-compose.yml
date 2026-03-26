@@ -1,0 +1,18 @@
+services:
+  mantha:
+    build: .
+    container_name: mantha-pipeline
+    env_file:
+      - .env
+    volumes:
+      - ./credentials.json:/app/credentials.json
+      - ./token.json:/app/token.json
+      - ./orders.csv:/app/orders.csv
+      - ./output:/app/output
+    command: python pipeline.py --file orders.csv --no-email
+    networks:
+      - agents-net
+
+networks:
+  agents-net:
+    external: true
