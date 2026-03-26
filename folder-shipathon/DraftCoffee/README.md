@@ -1,2 +1,0 @@
-# DraftCoffee
-An AI agent
