@@ -225,7 +225,7 @@ def send_report(
 # ── Quick smoke-test ───────────────────────────────────────────────────────────
 if __name__ == "__main__":
     success = send_report(
-        to=["test@example.com"],
+        to=["money.cassata@gmail.com"],
         subject="MANTHA Test Email",
         summary="This is a smoke-test from the MANTHA pipeline. No attachment.",
         attachment_paths=[],
